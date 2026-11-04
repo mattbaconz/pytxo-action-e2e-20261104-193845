@@ -5,3 +5,5 @@ function discounted(item, percent) {
 }
 
 module.exports = { discounted };
+
+// Percent is a number from 0 to 100.
