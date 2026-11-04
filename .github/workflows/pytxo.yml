@@ -1,0 +1,13 @@
+name: Pytxo
+on: pull_request
+permissions:
+  contents: read
+  pull-requests: write
+concurrency:
+  group: pytxo-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Pytxo-dev/pytxo/actions/land@v2.0.0
