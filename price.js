@@ -1,5 +1,5 @@
-function price(item) {
+function cost(item) {
   return item.cents / 100;
 }
 
-module.exports = { price };
+module.exports = { cost };
